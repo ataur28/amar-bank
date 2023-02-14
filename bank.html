@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl mt-8 text-center ">Let's get some <span class="text-blue-600">Money!!</span></h1>
+    </header>
+    <main>
+        <!-- dashbord -->
+        <section class="mt-8 mx-12">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="p-8 bg-sky-400 rounded">
+                    <h3 class="text-3xl">Dposit</h3>
+                    <h2 class="text-4xl">$<Span id="deposit-total">00</Span></h2>
+                </div>
+                <div class="p-8 bg-red-400 rounded">
+                    <h3 class="text-3xl">Withdrow</h3>
+                    <h2 class="text-4xl">$<Span id="withdrow-total">00</Span></h2>
+                </div>
+                <div class="p-8 bg-green-400 rounded">
+                    <h3 class="text-3xl">Balance</h3>
+                    <h2 class="text-4xl">$<Span id="balance-total">111240</Span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- deposit and withdrow -->
+        <section class="mt-8 mx-12">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-8 bg-sky-400 rounded">
+                    <h3 class="text-3xl text-white mb-4">Your Dposit</h3>
+                    <input class="px-3 py-2 w-3/4 block mb-4" type="text" name="" id="deposit-field" placeholder="$ Enter Your Deposite Amount">
+                    <button class="px-4 py-3 text-4xl bg-blue-600 rounded-lg text-white hover:bg-blue-400" id="btn-deposit" type="submit">Deposit</button>
+                </div>
+                <div class="p-8 bg-sky-400 rounded">
+                    <h3 class="text-3xl text-white mb-4">Your Withdrow</h3>
+                    <input class="px-3 py-2 w-3/4 block mb-4" type="text" name="" id="withdrow-field" placeholder="$ Enter Your withdrow Amount">
+                    <button class="px-4 py-3 text-4xl bg-blue-600 rounded-lg text-white hover:bg-blue-400" id="btn-withdrow" type="submit">Withdrow</button>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="js/utility.js"></script>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdrow.js"></script>
+</body>
+</html>
